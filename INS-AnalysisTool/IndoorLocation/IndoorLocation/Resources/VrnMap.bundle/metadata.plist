@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Voronezh-map</string>
+	<key>width</key>
+	<integer>7000</integer>
+	<key>height</key>
+	<integer>3001</integer>
+	<key>tileSetCount</key>
+	<integer>5</integer>
+	<key>tileSize</key>
+	<integer>128</integer>
+	<key>buildingUUID</key>
+	<string>F3CA5FB7-0933-4D65-96E5-7EAF278B1EF7</string>
+	<key>major</key>
+	<integer>4</integer>
+	<key>mapDPI</key>
+	<integer>600</integer>
+    <key>mapScale</key>
+    <integer>196</integer>
+</dict>
+</plist>

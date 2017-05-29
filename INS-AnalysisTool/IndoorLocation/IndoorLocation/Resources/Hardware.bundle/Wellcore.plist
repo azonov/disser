@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Wellcore W91</string>
+	<key>requiresPassword</key>
+	<true/>
+	<key>services</key>
+	<dict>
+		<!-- Check service ID/availability at https://www.bluetooth.com/specifications/gatt/services -->
+		<key>central</key>
+		<string>5153</string>
+		<key>primary</key>
+		<string>FFF0</string>
+		<key>battery</key>
+		<string>180F</string>
+		<key>password</key>
+		<string>FFF7</string>
+	</dict>
+	<key>characteristics</key>
+	<dict>
+		<key>Base configuration</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Name</string>
+				<key>uuid</key>
+				<string>FFF5</string>
+				<key>type</key>
+				<string>text</string>
+				<key>limits</key>
+				<string>{1,255}</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Change password</string>
+				<key>uuid</key>
+				<string>FFF7</string>
+				<key>type</key>
+				<string>action</string>
+				<key>limits</key>
+				<string>{6,14}</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Reset to factory defaults</string>
+				<key>uuid</key>
+				<string>FFF9</string>
+				<key>type</key>
+				<string>action</string>
+				<key>limits</key>
+				<string>invalid</string>
+			</dict>
+		</array>
+		<key>Beacon characteristics</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>UUID</string>
+				<key>uuid</key>
+				<string>FFF1</string>
+				<key>type</key>
+				<string>text</string>
+				<key>limits</key>
+				<string>{32,0}</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Major</string>
+				<key>uuid</key>
+				<string>FFF2</string>
+				<key>type</key>
+				<string>number</string>
+				<key>limits</key>
+				<string>{0,65535}</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Minor</string>
+				<key>uuid</key>
+				<string>FFF3</string>
+				<key>type</key>
+				<string>number</string>
+				<key>limits</key>
+				<string>{0,65535}</string>
+			</dict>
+		</array>
+		<key>Power and frequency</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Measured Power (1 m)</string>
+				<key>uuid</key>
+				<string>FFF4</string>
+				<key>type</key>
+				<string>constant</string>
+				<key>limits</key>
+				<string>invalid</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>TX Power</string>
+				<key>uuid</key>
+				<string>FFF6</string>
+				<key>type</key>
+				<string>range</string>
+				<key>limits</key>
+				<string>{0,2}</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Broadcast interval</string>
+				<key>uuid</key>
+				<string>FFF8</string>
+				<key>type</key>
+				<string>range</string>
+				<key>limits</key>
+				<string>{1,99}</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D561005BFD800B285ED338E4 /* NSIndexSet+IndexCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109765376D5EE703DF4D1 /* NSIndexSet+IndexCollection.m */; };
+		D56100919A4EC15CFB5883CA /* WCBeaconListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56105C010B92EA61D51242A /* WCBeaconListViewController.m */; };
+		D56100F5B21F2D55DDDFBB55 /* WCSerializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D561003E044C2D752D2E9138 /* WCSerializerFactory.m */; };
+		D561013F13F3E6A872D094F1 /* WCBeaconDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D561000A955FC95C24215937 /* WCBeaconDetailsViewController.m */; };
+		D561018FD16F557CAF942928 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610EB98320D81031915ADF /* UIViewController+Additions.m */; };
+		D561024D935503DA358DC244 /* HardwareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D56101D5EA2B64832FC46F04 /* HardwareInfo.m */; };
+		D5610260A8D896609AA7C399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D561031DD25964740F6C979D /* Main.storyboard */; };
+		D5610334DED45E52B670AE1B /* WCCoreBluetoothOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610346B694174A143D9AA2 /* WCCoreBluetoothOperation.m */; };
+		D5610370EDA1EDBA15AD661A /* WCAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109E5B6BAF7685DE6F0D0 /* WCAppAssembly.m */; };
+		D56103BC4C079573CEC2FD55 /* WCDataReadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D561010C45351ABC3D78A59B /* WCDataReadOperation.m */; };
+		D5610450569BD93D286D04CE /* WCPeripheralConfigurationInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109C1C13108558012B3E8 /* WCPeripheralConfigurationInteractor.m */; };
+		D561048D19225C8DEC254549 /* CBPeripheral+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109B93AA420B7C0D9F028 /* CBPeripheral+Additions.m */; };
+		D56104AA919548B373D29EA1 /* ILMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D561028CBEBA830CCB4E35B5 /* ILMapViewController.m */; };
+		D56104C3B6D173A7B7C060C2 /* WCWellcoreSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610268FA7BAC38E38F6C17 /* WCWellcoreSerializer.m */; };
+		D5610527E6986DD5CDF664A6 /* WCListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610FFE04E96C9493B4D89F /* WCListDataSource.m */; };
+		D56105A0A28F615893D5C6DB /* WCPeripheralSelectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D56107C0A29412EB4569175D /* WCPeripheralSelectionInteractor.m */; };
+		D5610608ACE67C7480E7B30C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5610928F2A1729E333B791F /* CoreBluetooth.framework */; };
+		D56106ABEFA159CEA918766F /* CollectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610E430A5DA158D79D5FB2 /* CollectionUtils.m */; };
+		D56106B20290345EEDA45A74 /* WCExperimentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610EA2F937EBAED996D112 /* WCExperimentsAssembly.m */; };
+		D56106CB14B5C098E9611F15 /* WCDataWriteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D56104608B1515B851306657 /* WCDataWriteOperation.m */; };
+		D561070B808539E4C1170745 /* ILConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610C0E9A8C4E99EDA26299 /* ILConstants.m */; };
+		D561076E830B9DD62128B9EE /* WCSensorFusion.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610AD87B4EAE112DDD4F39 /* WCSensorFusion.m */; };
+		D56107B764D0088661BC4D88 /* HardwareDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = D561003F4229D66BE370EA29 /* HardwareDescription.m */; };
+		D56108F620A6EBE9ACDFB8E9 /* WCHardwareSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610707316D72DDFEB520E9 /* WCHardwareSelectionViewController.m */; };
+		D5610A48D27274D2F2A77AF0 /* WCLoggingContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D56101F562B7CA4DEDFA3199 /* WCLoggingContext.m */; };
+		D5610A4C301E6F54D515FF9C /* WCPeripheralConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109E32B8F69ED9A17D70D /* WCPeripheralConnection.m */; };
+		D5610A4C98A113E0E29FD9BC /* WCExperimentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56108516E93E1C11FD982BE /* WCExperimentsViewController.m */; };
+		D5610A562CFB79E32D6D1B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E76A80CC0825DF91525 /* LaunchScreen.storyboard */; };
+		D5610A6AC8A1B39C948AC6E5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D561030840AFFE188F359238 /* CoreMotion.framework */; };
+		D5610A701C74B98E3A77370B /* WCDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610A9CADB140B9427DAC8A /* WCDiscoveryManager.m */; };
+		D5610ACA5DD868A9D3AB4488 /* Main.storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D561061737D3506DE46E1F18 /* Main.storyboard.m */; };
+		D5610B4FA0328F21F4CAF4B6 /* WCLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D561043475C849DC61C74FB3 /* WCLogFormatter.m */; };
+		D5610B73E7284F491C5D882E /* WCInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109A783B37A73087BCFCE /* WCInteractor.m */; };
+		D5610C41B0613B4DF26506FE /* WCMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D56109EA12F0D7B3041E76DB /* WCMulticastDelegate.m */; };
+		D5610C8AB4973BA620E7F8C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5610618A2F467EC27DCB755 /* CoreLocation.framework */; };
+		D5610C9CE7EC4CD1CDD71037 /* WCCoreProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D56107CFCF47071E37C5DB95 /* WCCoreProvider.m */; };
+		D5610D092FDEE7028CDEE346 /* WCCSVDataGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = D56101831895F43B067B58F9 /* WCCSVDataGrabber.m */; };
+		D5610E19849AC973EE9C5F5D /* UITableViewCell+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610CF2678089EC1C84447D /* UITableViewCell+Additions.m */; };
+		D5610EAE4DB008EC1F5C456A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610A3FE9D0A3355A730CA4 /* AppDelegate.m */; };
+		D5610F01A3C313783D0866C4 /* WCConfiguratorAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610E8CEB60F2E11BC67BEC /* WCConfiguratorAssembly.m */; };
+		D5610F04A4227CACD28B06DE /* WCCharacteristicDiscoveryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610C78D8AB32F763A99E59 /* WCCharacteristicDiscoveryOperation.m */; };
+		D5610F05A92DEA5964F2E797 /* WCHardwareSelectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610AB16110A95259E8C298 /* WCHardwareSelectionInteractor.m */; };
+		D5610F331864697D0061F323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5610884851909B12B1B422C /* Assets.xcassets */; };
+		D5610F55433676C9C8C47BEF /* Coordinates.c in Sources */ = {isa = PBXBuildFile; fileRef = D561059F248ED53CB28DB315 /* Coordinates.c */; };
+		D5610F79DAD901095F236CDE /* WCBeaconRanger.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610786054533F2BB0C62DA /* WCBeaconRanger.m */; };
+		D5610F8F87E920096D347FC7 /* WCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610A1317CE2A0D932A6685 /* WCTableViewCell.m */; };
+		D5610FBD22AB0E3D01A06736 /* VectorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5610F33965706FB1364D222 /* VectorUtils.m */; };
+		DD2B98921CFC444F0090339C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B98911CFC444F0090339C /* main.m */; };
+		DD5077111D7996AB00BB590B /* VrnMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD5077101D7996AB00BB590B /* VrnMap.bundle */; };
+		DD62FCF51D797435004AE394 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCEE1D797435004AE394 /* CocoaLumberjack.framework */; };
+		DD62FCF61D797435004AE394 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCEF1D797435004AE394 /* DZNEmptyDataSet.framework */; };
+		DD62FCF71D797435004AE394 /* KVOController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCF01D797435004AE394 /* KVOController.framework */; };
+		DD62FCF81D797435004AE394 /* libextobjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCF11D797435004AE394 /* libextobjc.framework */; };
+		DD62FCF91D797435004AE394 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCF21D797435004AE394 /* SVProgressHUD.framework */; };
+		DD62FCFA1D797435004AE394 /* Typhoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCF31D797435004AE394 /* Typhoon.framework */; };
+		DD62FCFB1D797435004AE394 /* XLForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD62FCF41D797435004AE394 /* XLForm.framework */; };
+		DD6444361DB52B5600B561FB /* MapEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6444351DB52B5600B561FB /* MapEngine.framework */; };
+		DD6444371DB52B5600B561FB /* MapEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD6444351DB52B5600B561FB /* MapEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDAA0F581D50DDAB00122F73 /* Hardware.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDAA0F571D50DDAB00122F73 /* Hardware.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD6444341DB52B3E00B561FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD6444371DB52B5600B561FB /* MapEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D561000A955FC95C24215937 /* WCBeaconDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBeaconDetailsViewController.m; sourceTree = "<group>"; };
+		D561003E044C2D752D2E9138 /* WCSerializerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSerializerFactory.m; sourceTree = "<group>"; };
+		D561003F4229D66BE370EA29 /* HardwareDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardwareDescription.m; sourceTree = "<group>"; };
+		D56100C0A355E3556F96792B /* WCHardwareSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCHardwareSelectionViewController.h; sourceTree = "<group>"; };
+		D561010C45351ABC3D78A59B /* WCDataReadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDataReadOperation.m; sourceTree = "<group>"; };
+		D5610125E7C8794F979A9348 /* VectorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils.h; sourceTree = "<group>"; };
+		D56101371BC437761CB27B88 /* WCMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCMulticastDelegate.h; sourceTree = "<group>"; };
+		D561013C2D8DB9662C2201C2 /* WCLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLogFormatter.h; sourceTree = "<group>"; };
+		D5610146C15198F75A6A492C /* WCInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCInteractor.h; sourceTree = "<group>"; };
+		D561017B3D30CC8D759E5EBE /* WCWellcoreSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCWellcoreSerializer.h; sourceTree = "<group>"; };
+		D561017D0D3470F6FEED92C2 /* WCHardwareSelectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCHardwareSelectionInteractor.h; sourceTree = "<group>"; };
+		D56101831895F43B067B58F9 /* WCCSVDataGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCSVDataGrabber.m; sourceTree = "<group>"; };
+		D561018D35FC74AF387F9966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IndoorLocation/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D56101D5EA2B64832FC46F04 /* HardwareInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardwareInfo.m; sourceTree = "<group>"; };
+		D56101E2345DD212666FAD9C /* WCCSVDataGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCSVDataGrabber.h; sourceTree = "<group>"; };
+		D56101F562B7CA4DEDFA3199 /* WCLoggingContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLoggingContext.m; sourceTree = "<group>"; };
+		D5610268FA7BAC38E38F6C17 /* WCWellcoreSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCWellcoreSerializer.m; sourceTree = "<group>"; };
+		D561028CBEBA830CCB4E35B5 /* ILMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMapViewController.m; sourceTree = "<group>"; };
+		D56102C3D706408D88C75B7A /* WCExperimentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCExperimentsAssembly.h; sourceTree = "<group>"; };
+		D56102E7E94F125EBEF26458 /* WCBeaconDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBeaconDetailsViewController.h; sourceTree = "<group>"; };
+		D561030840AFFE188F359238 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D561030D4AC8391E94EC1075 /* NSIndexSet+IndexCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+IndexCollection.h"; sourceTree = "<group>"; };
+		D561031E13EAB78BC778CBED /* HardwareInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareInfo.h; sourceTree = "<group>"; };
+		D5610346B694174A143D9AA2 /* WCCoreBluetoothOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCoreBluetoothOperation.m; sourceTree = "<group>"; };
+		D5610360D9F8C0BA23E32672 /* WCDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDiscoveryManager.h; sourceTree = "<group>"; };
+		D5610396B510FD710ED944FC /* WCSensorFusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSensorFusion.h; sourceTree = "<group>"; };
+		D56103A1085FF608933AB64E /* ConnectionDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDataSerializer.h; sourceTree = "<group>"; };
+		D5610420D8EA69FD7318B2D7 /* CBPeripheral+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Additions.h"; sourceTree = "<group>"; };
+		D561043475C849DC61C74FB3 /* WCLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLogFormatter.m; sourceTree = "<group>"; };
+		D56104608B1515B851306657 /* WCDataWriteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDataWriteOperation.m; sourceTree = "<group>"; };
+		D561058B9A964961955E6DC4 /* WCPeripheralConfigurationInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPeripheralConfigurationInteractor.h; sourceTree = "<group>"; };
+		D561059F248ED53CB28DB315 /* Coordinates.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Coordinates.c; sourceTree = "<group>"; };
+		D56105C010B92EA61D51242A /* WCBeaconListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBeaconListViewController.m; sourceTree = "<group>"; };
+		D561061737D3506DE46E1F18 /* Main.storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.storyboard.m; sourceTree = "<group>"; };
+		D5610618A2F467EC27DCB755 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5610634EF1D6F561E7A1076 /* WCListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCListDataSource.h; sourceTree = "<group>"; };
+		D561064B8478A1B8EAAFE52A /* ILMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMapViewController.h; sourceTree = "<group>"; };
+		D56106ECAAC5FC2670DE4FCE /* WCSerializerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSerializerFactory.h; sourceTree = "<group>"; };
+		D5610707316D72DDFEB520E9 /* WCHardwareSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCHardwareSelectionViewController.m; sourceTree = "<group>"; };
+		D561076DDA616823E68D7A97 /* WCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTableViewCell.h; sourceTree = "<group>"; };
+		D5610786054533F2BB0C62DA /* WCBeaconRanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBeaconRanger.m; sourceTree = "<group>"; };
+		D56107C0A29412EB4569175D /* WCPeripheralSelectionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPeripheralSelectionInteractor.m; sourceTree = "<group>"; };
+		D56107CFCF47071E37C5DB95 /* WCCoreProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCoreProvider.m; sourceTree = "<group>"; };
+		D56107FC13687DF3D0A69B33 /* ILConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILConstants.h; sourceTree = "<group>"; };
+		D5610818C40BDCB26ADA1021 /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinates.h; sourceTree = "<group>"; };
+		D56108516E93E1C11FD982BE /* WCExperimentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCExperimentsViewController.m; sourceTree = "<group>"; };
+		D5610855DD20671F8C07CDE6 /* CollectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionUtils.h; sourceTree = "<group>"; };
+		D5610865973C9438477CCB0E /* UITableViewCell+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Additions.h"; sourceTree = "<group>"; };
+		D561086679AFE659437E22BF /* WCPeripheralSelectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPeripheralSelectionInteractor.h; sourceTree = "<group>"; };
+		D56108765D0C4A4BAD6A127E /* WCPeripheralConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPeripheralConnection.h; sourceTree = "<group>"; };
+		D5610884851909B12B1B422C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D56108C781AE8A7982C1EF7B /* WCBeaconRanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBeaconRanger.h; sourceTree = "<group>"; };
+		D5610928F2A1729E333B791F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D56109765376D5EE703DF4D1 /* NSIndexSet+IndexCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+IndexCollection.m"; sourceTree = "<group>"; };
+		D56109A783B37A73087BCFCE /* WCInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCInteractor.m; sourceTree = "<group>"; };
+		D56109B93AA420B7C0D9F028 /* CBPeripheral+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Additions.m"; sourceTree = "<group>"; };
+		D56109C0A38CBCA5AB5F00E1 /* WCDataWriteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataWriteOperation.h; sourceTree = "<group>"; };
+		D56109C1C13108558012B3E8 /* WCPeripheralConfigurationInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPeripheralConfigurationInteractor.m; sourceTree = "<group>"; };
+		D56109E32B8F69ED9A17D70D /* WCPeripheralConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPeripheralConnection.m; sourceTree = "<group>"; };
+		D56109E5B6BAF7685DE6F0D0 /* WCAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAppAssembly.m; sourceTree = "<group>"; };
+		D56109EA12F0D7B3041E76DB /* WCMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCMulticastDelegate.m; sourceTree = "<group>"; };
+		D5610A1317CE2A0D932A6685 /* WCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTableViewCell.m; sourceTree = "<group>"; };
+		D5610A3FE9D0A3355A730CA4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5610A9CADB140B9427DAC8A /* WCDiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDiscoveryManager.m; sourceTree = "<group>"; };
+		D5610AB16110A95259E8C298 /* WCHardwareSelectionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCHardwareSelectionInteractor.m; sourceTree = "<group>"; };
+		D5610AD3998B76CF2C6F5396 /* WCBeaconListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBeaconListViewController.h; sourceTree = "<group>"; };
+		D5610AD87B4EAE112DDD4F39 /* WCSensorFusion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSensorFusion.m; sourceTree = "<group>"; };
+		D5610B60D2C263B8CC8138BF /* WCCoreBluetoothOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCoreBluetoothOperation.h; sourceTree = "<group>"; };
+		D5610B80248E7ECD9C23027C /* WCConfiguratorAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCConfiguratorAssembly.h; sourceTree = "<group>"; };
+		D5610BD3D49EA87D468BC0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IndoorLocation/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		D5610C0143A4C4EE55F1F76E /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additions.h"; sourceTree = "<group>"; };
+		D5610C0E9A8C4E99EDA26299 /* ILConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILConstants.m; sourceTree = "<group>"; };
+		D5610C2D011FFCA413D703D0 /* WCCoreProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCoreProvider.h; sourceTree = "<group>"; };
+		D5610C78D8AB32F763A99E59 /* WCCharacteristicDiscoveryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCharacteristicDiscoveryOperation.m; sourceTree = "<group>"; };
+		D5610CF2678089EC1C84447D /* UITableViewCell+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Additions.m"; sourceTree = "<group>"; };
+		D5610D08FC05CE1230A31DA5 /* Main.storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main.storyboard.h; sourceTree = "<group>"; };
+		D5610DA5A70CB3A8866EC9F7 /* HardwareDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareDescription.h; sourceTree = "<group>"; };
+		D5610E05E77130E4DCC0E84D /* WCAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAppAssembly.h; sourceTree = "<group>"; };
+		D5610E2CF05AE552E5D3CC64 /* WCCharacteristicDiscoveryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCharacteristicDiscoveryOperation.h; sourceTree = "<group>"; };
+		D5610E430A5DA158D79D5FB2 /* CollectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionUtils.m; sourceTree = "<group>"; };
+		D5610E8CEB60F2E11BC67BEC /* WCConfiguratorAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCConfiguratorAssembly.m; sourceTree = "<group>"; };
+		D5610E93662E10D7245DD1E8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5610EA2F937EBAED996D112 /* WCExperimentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCExperimentsAssembly.m; sourceTree = "<group>"; };
+		D5610EB98320D81031915ADF /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additions.m"; sourceTree = "<group>"; };
+		D5610F33965706FB1364D222 /* VectorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorUtils.m; sourceTree = "<group>"; };
+		D5610F91A90620D2616ED07D /* WCDataReadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataReadOperation.h; sourceTree = "<group>"; };
+		D5610F982CE27491188B3EBB /* WCExperimentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCExperimentsViewController.h; sourceTree = "<group>"; };
+		D5610FE8B82E8FFA904EF9BB /* WCLoggingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLoggingContext.h; sourceTree = "<group>"; };
+		D5610FFE04E96C9493B4D89F /* WCListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCListDataSource.m; sourceTree = "<group>"; };
+		DD2B988D1CFC444F0090339C /* IndoorLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2B98911CFC444F0090339C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD2B98A11CFC444F0090339C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DD5077101D7996AB00BB590B /* VrnMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VrnMap.bundle; sourceTree = "<group>"; };
+		DD62FCEE1D797435004AE394 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		DD62FCEF1D797435004AE394 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
+		DD62FCF01D797435004AE394 /* KVOController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KVOController.framework; path = ../Carthage/Build/iOS/KVOController.framework; sourceTree = "<group>"; };
+		DD62FCF11D797435004AE394 /* libextobjc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libextobjc.framework; path = ../Carthage/Build/iOS/libextobjc.framework; sourceTree = "<group>"; };
+		DD62FCF21D797435004AE394 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = ../Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		DD62FCF31D797435004AE394 /* Typhoon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Typhoon.framework; path = ../Carthage/Build/iOS/Typhoon.framework; sourceTree = "<group>"; };
+		DD62FCF41D797435004AE394 /* XLForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLForm.framework; path = ../Carthage/Build/iOS/XLForm.framework; sourceTree = "<group>"; };
+		DD6444351DB52B5600B561FB /* MapEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAA0F571D50DDAB00122F73 /* Hardware.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Hardware.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD2B988A1CFC444F0090339C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD62FCFA1D797435004AE394 /* Typhoon.framework in Frameworks */,
+				D5610C8AB4973BA620E7F8C0 /* CoreLocation.framework in Frameworks */,
+				D5610A6AC8A1B39C948AC6E5 /* CoreMotion.framework in Frameworks */,
+				DD62FCF91D797435004AE394 /* SVProgressHUD.framework in Frameworks */,
+				DD62FCF51D797435004AE394 /* CocoaLumberjack.framework in Frameworks */,
+				DD62FCF71D797435004AE394 /* KVOController.framework in Frameworks */,
+				DD62FCFB1D797435004AE394 /* XLForm.framework in Frameworks */,
+				DD62FCF61D797435004AE394 /* DZNEmptyDataSet.framework in Frameworks */,
+				DD62FCF81D797435004AE394 /* libextobjc.framework in Frameworks */,
+				D5610608ACE67C7480E7B30C /* CoreBluetooth.framework in Frameworks */,
+				DD6444361DB52B5600B561FB /* MapEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D56100BE7A6844121820CCF9 /* Serializers */ = {
+			isa = PBXGroup;
+			children = (
+				D5610268FA7BAC38E38F6C17 /* WCWellcoreSerializer.m */,
+				D561017B3D30CC8D759E5EBE /* WCWellcoreSerializer.h */,
+				D56103A1085FF608933AB64E /* ConnectionDataSerializer.h */,
+				D561003E044C2D752D2E9138 /* WCSerializerFactory.m */,
+				D56106ECAAC5FC2670DE4FCE /* WCSerializerFactory.h */,
+			);
+			path = Serializers;
+			sourceTree = "<group>";
+		};
+		D561010BA60CCD9585853899 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD5077101D7996AB00BB590B /* VrnMap.bundle */,
+				DDAA0F571D50DDAB00122F73 /* Hardware.bundle */,
+				D5610884851909B12B1B422C /* Assets.xcassets */,
+				D561031DD25964740F6C979D /* Main.storyboard */,
+				D5610E76A80CC0825DF91525 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D56101D5F763A0653AAF4ADE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D5610D08FC05CE1230A31DA5 /* Main.storyboard.h */,
+				D561061737D3506DE46E1F18 /* Main.storyboard.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		D561021CB30C53083F46BEFD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D56102BBE9B7E1B5B69AA477 /* Experiments */,
+				D5610F77C82829DAD73124A0 /* Configuration */,
+				D5610F67A5BFBC7F1104A903 /* DataSources */,
+				D5610773E375DC1BD27143B2 /* Categories */,
+				D56101D5F763A0653AAF4ADE /* Generated */,
+				D5610A044A25B0D0CF98885A /* Cells */,
+				D5610291F26CA1230C658BFA /* Map */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D5610291F26CA1230C658BFA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D561064B8478A1B8EAAFE52A /* ILMapViewController.h */,
+				D561028CBEBA830CCB4E35B5 /* ILMapViewController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D56102BBE9B7E1B5B69AA477 /* Experiments */ = {
+			isa = PBXGroup;
+			children = (
+				D56108516E93E1C11FD982BE /* WCExperimentsViewController.m */,
+				D5610F982CE27491188B3EBB /* WCExperimentsViewController.h */,
+			);
+			path = Experiments;
+			sourceTree = "<group>";
+		};
+		D56102F28C036472C75C86CA /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		D561032C48F7C567E3B2A0FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D56107FC13687DF3D0A69B33 /* ILConstants.h */,
+				D5610C0E9A8C4E99EDA26299 /* ILConstants.m */,
+				D56107D35DA13038C307C01B /* Logging */,
+				D5610C07E992036F01FECDFF /* Ranging */,
+				D561089A09509497960AB9E5 /* CSV */,
+				D56107531E2151963A476A86 /* Sensors */,
+				D56105DFE7FE831C317F901E /* Utils */,
+				D5610BACDD4A7019DA5073ED /* Configurator */,
+				D5610CEB3BDB13582C58F789 /* Categories */,
+				D56109D487AA078CF6D88D7E /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D5610455AB99F8308D8CFDD5 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				D56109E5B6BAF7685DE6F0D0 /* WCAppAssembly.m */,
+				D5610E05E77130E4DCC0E84D /* WCAppAssembly.h */,
+				D5610C37A7B435E8E4CC78AD /* Core */,
+				D561074F8B17C85591528CA7 /* UI */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		D561051349BD006EED4E8D01 /* Coordinates */ = {
+			isa = PBXGroup;
+			children = (
+				D561059F248ED53CB28DB315 /* Coordinates.c */,
+				D5610818C40BDCB26ADA1021 /* Coordinates.h */,
+				D5610125E7C8794F979A9348 /* VectorUtils.h */,
+				D5610F33965706FB1364D222 /* VectorUtils.m */,
+			);
+			name = Coordinates;
+			path = ../ThirdParty/Coordinates;
+			sourceTree = "<group>";
+		};
+		D5610533308110275CF3A6FF /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				D5610AB16110A95259E8C298 /* WCHardwareSelectionInteractor.m */,
+				D561017D0D3470F6FEED92C2 /* WCHardwareSelectionInteractor.h */,
+				D56109A783B37A73087BCFCE /* WCInteractor.m */,
+				D5610146C15198F75A6A492C /* WCInteractor.h */,
+				D5610691844606BA5BC0D261 /* Peripherals */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		D56105B2B261A9C8B9CA9E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD6444351DB52B5600B561FB /* MapEngine.framework */,
+				DD62FCEE1D797435004AE394 /* CocoaLumberjack.framework */,
+				DD62FCEF1D797435004AE394 /* DZNEmptyDataSet.framework */,
+				DD62FCF01D797435004AE394 /* KVOController.framework */,
+				DD62FCF11D797435004AE394 /* libextobjc.framework */,
+				DD62FCF21D797435004AE394 /* SVProgressHUD.framework */,
+				DD62FCF31D797435004AE394 /* Typhoon.framework */,
+				DD62FCF41D797435004AE394 /* XLForm.framework */,
+				D5610618A2F467EC27DCB755 /* CoreLocation.framework */,
+				D561030840AFFE188F359238 /* CoreMotion.framework */,
+				D5610928F2A1729E333B791F /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D56105DFE7FE831C317F901E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5610855DD20671F8C07CDE6 /* CollectionUtils.h */,
+				D5610E430A5DA158D79D5FB2 /* CollectionUtils.m */,
+				D56109EA12F0D7B3041E76DB /* WCMulticastDelegate.m */,
+				D56101371BC437761CB27B88 /* WCMulticastDelegate.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D5610691844606BA5BC0D261 /* Peripherals */ = {
+			isa = PBXGroup;
+			children = (
+				D56109C1C13108558012B3E8 /* WCPeripheralConfigurationInteractor.m */,
+				D561058B9A964961955E6DC4 /* WCPeripheralConfigurationInteractor.h */,
+				D56107C0A29412EB4569175D /* WCPeripheralSelectionInteractor.m */,
+				D561086679AFE659437E22BF /* WCPeripheralSelectionInteractor.h */,
+			);
+			path = Peripherals;
+			sourceTree = "<group>";
+		};
+		D561074F8B17C85591528CA7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D5610EA2F937EBAED996D112 /* WCExperimentsAssembly.m */,
+				D56102C3D706408D88C75B7A /* WCExperimentsAssembly.h */,
+				D5610E8CEB60F2E11BC67BEC /* WCConfiguratorAssembly.m */,
+				D5610B80248E7ECD9C23027C /* WCConfiguratorAssembly.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D56107531E2151963A476A86 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				D5610AD87B4EAE112DDD4F39 /* WCSensorFusion.m */,
+				D5610396B510FD710ED944FC /* WCSensorFusion.h */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		D5610773E375DC1BD27143B2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D5610CF2678089EC1C84447D /* UITableViewCell+Additions.m */,
+				D5610865973C9438477CCB0E /* UITableViewCell+Additions.h */,
+				D5610EB98320D81031915ADF /* UIViewController+Additions.m */,
+				D5610C0143A4C4EE55F1F76E /* UIViewController+Additions.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D56107D35DA13038C307C01B /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				D561013C2D8DB9662C2201C2 /* WCLogFormatter.h */,
+				D561043475C849DC61C74FB3 /* WCLogFormatter.m */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		D561089A09509497960AB9E5 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				D56101831895F43B067B58F9 /* WCCSVDataGrabber.m */,
+				D56101E2345DD212666FAD9C /* WCCSVDataGrabber.h */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		D56109D487AA078CF6D88D7E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D5610D1DAB35A2E8623C668A /* Ephemeral */,
+				D56102F28C036472C75C86CA /* Persistent */,
+				D5610B9BAA52511D5E857910 /* Common */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D5610A044A25B0D0CF98885A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5610A1317CE2A0D932A6685 /* WCTableViewCell.m */,
+				D561076DDA616823E68D7A97 /* WCTableViewCell.h */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D5610A206FC8ED348D9B00BA /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				D561010C45351ABC3D78A59B /* WCDataReadOperation.m */,
+				D5610F91A90620D2616ED07D /* WCDataReadOperation.h */,
+				D56104608B1515B851306657 /* WCDataWriteOperation.m */,
+				D56109C0A38CBCA5AB5F00E1 /* WCDataWriteOperation.h */,
+				D5610346B694174A143D9AA2 /* WCCoreBluetoothOperation.m */,
+				D5610B60D2C263B8CC8138BF /* WCCoreBluetoothOperation.h */,
+				D5610C78D8AB32F763A99E59 /* WCCharacteristicDiscoveryOperation.m */,
+				D5610E2CF05AE552E5D3CC64 /* WCCharacteristicDiscoveryOperation.h */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		D5610B9BAA52511D5E857910 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D56101D5EA2B64832FC46F04 /* HardwareInfo.m */,
+				D561031E13EAB78BC778CBED /* HardwareInfo.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D5610BACDD4A7019DA5073ED /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D5610360D9F8C0BA23E32672 /* WCDiscoveryManager.h */,
+				D5610A9CADB140B9427DAC8A /* WCDiscoveryManager.m */,
+				D56108765D0C4A4BAD6A127E /* WCPeripheralConnection.h */,
+				D56109E32B8F69ED9A17D70D /* WCPeripheralConnection.m */,
+				D5610A206FC8ED348D9B00BA /* Operations */,
+				D56100BE7A6844121820CCF9 /* Serializers */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D5610C07E992036F01FECDFF /* Ranging */ = {
+			isa = PBXGroup;
+			children = (
+				D5610786054533F2BB0C62DA /* WCBeaconRanger.m */,
+				D56108C781AE8A7982C1EF7B /* WCBeaconRanger.h */,
+			);
+			path = Ranging;
+			sourceTree = "<group>";
+		};
+		D5610C37A7B435E8E4CC78AD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D5610C2D011FFCA413D703D0 /* WCCoreProvider.h */,
+				D56101F562B7CA4DEDFA3199 /* WCLoggingContext.m */,
+				D5610FE8B82E8FFA904EF9BB /* WCLoggingContext.h */,
+				D56107CFCF47071E37C5DB95 /* WCCoreProvider.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D5610CEB3BDB13582C58F789 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D561030D4AC8391E94EC1075 /* NSIndexSet+IndexCollection.h */,
+				D56109765376D5EE703DF4D1 /* NSIndexSet+IndexCollection.m */,
+				D56109B93AA420B7C0D9F028 /* CBPeripheral+Additions.m */,
+				D5610420D8EA69FD7318B2D7 /* CBPeripheral+Additions.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D5610D1DAB35A2E8623C668A /* Ephemeral */ = {
+			isa = PBXGroup;
+			children = (
+				D561003F4229D66BE370EA29 /* HardwareDescription.m */,
+				D5610DA5A70CB3A8866EC9F7 /* HardwareDescription.h */,
+			);
+			path = Ephemeral;
+			sourceTree = "<group>";
+		};
+		D5610F67A5BFBC7F1104A903 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D5610FFE04E96C9493B4D89F /* WCListDataSource.m */,
+				D5610634EF1D6F561E7A1076 /* WCListDataSource.h */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		D5610F77C82829DAD73124A0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D56105C010B92EA61D51242A /* WCBeaconListViewController.m */,
+				D5610AD3998B76CF2C6F5396 /* WCBeaconListViewController.h */,
+				D561000A955FC95C24215937 /* WCBeaconDetailsViewController.m */,
+				D56102E7E94F125EBEF26458 /* WCBeaconDetailsViewController.h */,
+				D5610707316D72DDFEB520E9 /* WCHardwareSelectionViewController.m */,
+				D56100C0A355E3556F96792B /* WCHardwareSelectionViewController.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DD2B98841CFC444F0090339C = {
+			isa = PBXGroup;
+			children = (
+				DD2B988F1CFC444F0090339C /* IndoorLocation */,
+				DD2B988E1CFC444F0090339C /* Products */,
+				D56105B2B261A9C8B9CA9E6D /* Frameworks */,
+				D561051349BD006EED4E8D01 /* Coordinates */,
+			);
+			sourceTree = "<group>";
+		};
+		DD2B988E1CFC444F0090339C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B988D1CFC444F0090339C /* IndoorLocation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2B988F1CFC444F0090339C /* IndoorLocation */ = {
+			isa = PBXGroup;
+			children = (
+				D5610455AB99F8308D8CFDD5 /* Assemblies */,
+				D561032C48F7C567E3B2A0FC /* Core */,
+				DD2B98A11CFC444F0090339C /* Info.plist */,
+				D5610533308110275CF3A6FF /* Interaction */,
+				D561010BA60CCD9585853899 /* Resources */,
+				DD2B98901CFC444F0090339C /* Supporting Files */,
+				D561021CB30C53083F46BEFD /* UI */,
+			);
+			path = IndoorLocation;
+			sourceTree = "<group>";
+		};
+		DD2B98901CFC444F0090339C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B98911CFC444F0090339C /* main.m */,
+				D5610E93662E10D7245DD1E8 /* AppDelegate.h */,
+				D5610A3FE9D0A3355A730CA4 /* AppDelegate.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD2B988C1CFC444F0090339C /* IndoorLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2B98A41CFC444F0090339C /* Build configuration list for PBXNativeTarget "IndoorLocation" */;
+			buildPhases = (
+				DDF0E0E51D522D19004C713E /* Generate storyboard identifiers */,
+				DD2B98891CFC444F0090339C /* Sources */,
+				DD2B988A1CFC444F0090339C /* Frameworks */,
+				DD2B988B1CFC444F0090339C /* Resources */,
+				DD72F62E1CFF19F700F76713 /* Embed Carthage frameworks */,
+				DD6444341DB52B3E00B561FB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndoorLocation;
+			productName = WellcoreCalibrator;
+			productReference = DD2B988D1CFC444F0090339C /* IndoorLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD2B98851CFC444F0090339C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = DataArt;
+				TargetAttributes = {
+					DD2B988C1CFC444F0090339C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G5EG5T3U3L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD2B98881CFC444F0090339C /* Build configuration list for PBXProject "IndoorLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD2B98841CFC444F0090339C;
+			productRefGroup = DD2B988E1CFC444F0090339C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD2B988C1CFC444F0090339C /* IndoorLocation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD2B988B1CFC444F0090339C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5610F331864697D0061F323 /* Assets.xcassets in Resources */,
+				DDAA0F581D50DDAB00122F73 /* Hardware.bundle in Resources */,
+				D5610260A8D896609AA7C399 /* Main.storyboard in Resources */,
+				D5610A562CFB79E32D6D1B59 /* LaunchScreen.storyboard in Resources */,
+				DD5077111D7996AB00BB590B /* VrnMap.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD72F62E1CFF19F700F76713 /* Embed Carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Typhoon.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/XLForm.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/libextobjc.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/DZNEmptyDataSet.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/KVOController.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			name = "Embed Carthage frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		DDF0E0E51D522D19004C713E /* Generate storyboard identifiers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate storyboard identifiers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../Scripts/segue_generator.py\" -p WC -o \"$SRCROOT/IndoorLocation/UI/Generated\" \"$SRCROOT/IndoorLocation/Base.lproj/Main.storyboard\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD2B98891CFC444F0090339C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2B98921CFC444F0090339C /* main.m in Sources */,
+				D5610EAE4DB008EC1F5C456A /* AppDelegate.m in Sources */,
+				D561070B808539E4C1170745 /* ILConstants.m in Sources */,
+				D5610B4FA0328F21F4CAF4B6 /* WCLogFormatter.m in Sources */,
+				D5610F79DAD901095F236CDE /* WCBeaconRanger.m in Sources */,
+				D5610370EDA1EDBA15AD661A /* WCAppAssembly.m in Sources */,
+				D5610D092FDEE7028CDEE346 /* WCCSVDataGrabber.m in Sources */,
+				D561076E830B9DD62128B9EE /* WCSensorFusion.m in Sources */,
+				D5610A701C74B98E3A77370B /* WCDiscoveryManager.m in Sources */,
+				D5610A4C301E6F54D515FF9C /* WCPeripheralConnection.m in Sources */,
+				D56106B20290345EEDA45A74 /* WCExperimentsAssembly.m in Sources */,
+				D5610A48D27274D2F2A77AF0 /* WCLoggingContext.m in Sources */,
+				D5610C9CE7EC4CD1CDD71037 /* WCCoreProvider.m in Sources */,
+				D5610F01A3C313783D0866C4 /* WCConfiguratorAssembly.m in Sources */,
+				D56100919A4EC15CFB5883CA /* WCBeaconListViewController.m in Sources */,
+				D5610A4C98A113E0E29FD9BC /* WCExperimentsViewController.m in Sources */,
+				D561013F13F3E6A872D094F1 /* WCBeaconDetailsViewController.m in Sources */,
+				D5610527E6986DD5CDF664A6 /* WCListDataSource.m in Sources */,
+				D56108F620A6EBE9ACDFB8E9 /* WCHardwareSelectionViewController.m in Sources */,
+				D56107B764D0088661BC4D88 /* HardwareDescription.m in Sources */,
+				D56106ABEFA159CEA918766F /* CollectionUtils.m in Sources */,
+				D5610F05A92DEA5964F2E797 /* WCHardwareSelectionInteractor.m in Sources */,
+				D5610B73E7284F491C5D882E /* WCInteractor.m in Sources */,
+				D5610E19849AC973EE9C5F5D /* UITableViewCell+Additions.m in Sources */,
+				D5610ACA5DD868A9D3AB4488 /* Main.storyboard.m in Sources */,
+				D561018FD16F557CAF942928 /* UIViewController+Additions.m in Sources */,
+				D5610F8F87E920096D347FC7 /* WCTableViewCell.m in Sources */,
+				D561005BFD800B285ED338E4 /* NSIndexSet+IndexCollection.m in Sources */,
+				D5610450569BD93D286D04CE /* WCPeripheralConfigurationInteractor.m in Sources */,
+				D56105A0A28F615893D5C6DB /* WCPeripheralSelectionInteractor.m in Sources */,
+				D561024D935503DA358DC244 /* HardwareInfo.m in Sources */,
+				D5610C41B0613B4DF26506FE /* WCMulticastDelegate.m in Sources */,
+				D56103BC4C079573CEC2FD55 /* WCDataReadOperation.m in Sources */,
+				D56106CB14B5C098E9611F15 /* WCDataWriteOperation.m in Sources */,
+				D5610334DED45E52B670AE1B /* WCCoreBluetoothOperation.m in Sources */,
+				D5610F04A4227CACD28B06DE /* WCCharacteristicDiscoveryOperation.m in Sources */,
+				D561048D19225C8DEC254549 /* CBPeripheral+Additions.m in Sources */,
+				D56104C3B6D173A7B7C060C2 /* WCWellcoreSerializer.m in Sources */,
+				D56100F5B21F2D55DDDFBB55 /* WCSerializerFactory.m in Sources */,
+				D56104AA919548B373D29EA1 /* ILMapViewController.m in Sources */,
+				D5610F55433676C9C8C47BEF /* Coordinates.c in Sources */,
+				D5610FBD22AB0E3D01A06736 /* VectorUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D561031DD25964740F6C979D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D561018D35FC74AF387F9966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5610E76A80CC0825DF91525 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5610BD3D49EA87D468BC0D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD2B98A21CFC444F0090339C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD2B98A31CFC444F0090339C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD2B98A51CFC444F0090339C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G5EG5T3U3L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/IndoorLocation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.IndoorLocation;
+				PRODUCT_NAME = IndoorLocation;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DD2B98A61CFC444F0090339C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G5EG5T3U3L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/IndoorLocation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.IndoorLocation;
+				PRODUCT_NAME = IndoorLocation;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD2B98881CFC444F0090339C /* Build configuration list for PBXProject "IndoorLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2B98A21CFC444F0090339C /* Debug */,
+				DD2B98A31CFC444F0090339C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2B98A41CFC444F0090339C /* Build configuration list for PBXNativeTarget "IndoorLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2B98A51CFC444F0090339C /* Debug */,
+				DD2B98A61CFC444F0090339C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD2B98851CFC444F0090339C /* Project object */;
+}

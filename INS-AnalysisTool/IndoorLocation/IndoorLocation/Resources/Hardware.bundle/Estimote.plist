@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Estimote</string>
+	<key>requiresPassword</key>
+	<false/>
+	<key>services</key>
+    <dict>
+    	<!-- Check service ID/availability at https://www.bluetooth.com/specifications/gatt/services -->
+    	<key>central</key>
+    	<string>FEE7</string>
+    	<key>primary</key>
+    	<string>180A</string>
+    	<key>battery</key>
+    	<string>180F</string>
+    	<key>password</key>
+    	<string>FFF7</string>
+    </dict>
+    <key>characteristics</key>
+    <dict></dict>
+</dict>
+</plist>

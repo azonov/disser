@@ -1,0 +1,7 @@
+github "CocoaLumberjack/CocoaLumberjack"
+github "appsquickly/Typhoon"
+github "xmartlabs/XLForm"
+github "dzenbot/DZNEmptyDataSet"
+github "ashaman/libextobjc" "master"
+github "facebook/KVOController"
+github "SVProgressHUD/SVProgressHUD"

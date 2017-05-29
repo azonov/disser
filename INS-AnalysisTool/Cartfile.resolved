@@ -1,0 +1,7 @@
+github "CocoaLumberjack/CocoaLumberjack" "3.0.0"
+github "dzenbot/DZNEmptyDataSet" "v1.8.1"
+github "facebook/KVOController" "v1.2.0"
+github "SVProgressHUD/SVProgressHUD" "2.0.3"
+github "appsquickly/Typhoon" "3.5.1"
+github "xmartlabs/XLForm" "3.2.0"
+github "ashaman/libextobjc" "e24f2be3af2cf7fc88a78295f116ef98d0832bcf"
